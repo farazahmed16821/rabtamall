@@ -2,68 +2,92 @@
 <html lang="ur" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>RabtaMall - آن لائن خریداری</title>
+  <title>RabtaMall - آن لائن شاپنگ</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f8f8f8;
-      direction: rtl;
-      text-align: center;
+      font-family: 'Noto Nastaliq Urdu', serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
     }
     header {
-      background-color: #0088cc;
+      background-color: #008080;
       color: white;
       padding: 20px;
+      text-align: center;
+    }
+    h1, h2 {
+      margin: 0;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
     }
     .product {
-      background: white;
-      border: 1px solid #ddd;
-      margin: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      margin: 10px;
       padding: 10px;
-      display: inline-block;
       width: 200px;
-      border-radius: 8px;
+      text-align: center;
     }
     .product img {
       width: 100%;
       height: 150px;
       object-fit: cover;
+      border-radius: 5px;
     }
     .product h3 {
+      margin: 10px 0 5px;
       font-size: 18px;
-      margin: 10px 0;
     }
     .product p {
-      color: #444;
+      margin: 5px 0;
+      color: green;
+      font-weight: bold;
     }
-    .product button {
-      background-color: #0088cc;
+    .btn {
+      background-color: #25D366;
       color: white;
-      border: none;
       padding: 8px 12px;
+      text-decoration: none;
       border-radius: 5px;
-      cursor: pointer;
+      display: inline-block;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>RabtaMall</h1>
-    <p>خوش آمدید ہماری آن لائن شاپ پر</p>
+    <h1>🌟 RabtaMall</h1>
+    <p>آن لائن شاپنگ کا سب سے معتبر نام</p>
   </header>
 
-  <div class="product">
-    <img src="https://via.placeholder.com/200x150" alt="Product 1">
-    <h3>پہلا پروڈکٹ</h3>
-    <p>قیمت: Rs. 999</p>
-    <button>ابھی خریدیں</button>
-  </div>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150" alt="کپڑے">
+      <h3>خوبصورت کپڑے</h3>
+      <p>Rs. 1500</p>
+      <a class="btn" href="https://wa.me/923001112233?text=Mujhe%20yeh%20kapray%20chahiye">WhatsApp آرڈر</a>
+    </div>
 
-  <div class="product">
-    <img src="https://via.placeholder.com/200x150" alt="Product 2">
-    <h3>دوسرا پروڈکٹ</h3>
-    <p>قیمت: Rs. 1499</p>
-    <button>خریدیں</button>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150" alt="جوتے">
+      <h3>جدید جوتے</h3>
+      <p>Rs. 2500</p>
+      <a class="btn" href="https://wa.me/923001112233?text=Mujhe%20yeh%20jootay%20chahiye">WhatsApp آرڈر</a>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150" alt="پرفیوم">
+      <h3>Fragrance پرفیوم</h3>
+      <p>Rs. 1800</p>
+      <a class="btn" href="https://wa.me/923141682122?text=Mujhe%20yeh%20perfume%20chahiye">WhatsApp آرڈر</a>
+    </div>
   </div>
 
 </body>
