@@ -1,14 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 10px;
-}
-
-h1 {
-    color: #007BFF;
-}
-
-p {
-    font-size: 15px;
+.container {
+    max-width: 800px; /* ڈیش بورڈ کی چوڑائی */
+    margin: 0 auto;   /* سینٹر میں لانے کے لیے */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
