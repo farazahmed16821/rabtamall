@@ -27,9 +27,9 @@ header h1 {
 /* Products Section */
 .products {
   display: flex;
-  flex-start: wrap;
+  flex-start: start;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   gap: 20px;
 }
 
