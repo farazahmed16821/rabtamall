@@ -68,13 +68,11 @@ header {
   margin-top: 8px;
 }
 
-/* Footer */
 footer {
-  background: black;
+  background-color: black;
   color: white;
   padding: 20px;
   text-align: center;
-  position: relative;
 }
 
 .footer-item {
