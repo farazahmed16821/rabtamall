@@ -56,3 +56,8 @@ function checkout() {
 window.onload = function () {
     renderCart();
 };
+// script.js
+
+console.log("Website loaded successfully!");
+
+alert("خوش آمدید rabtaMall پر!");
