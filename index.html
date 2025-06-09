@@ -8,75 +8,53 @@
 </head>
 <body>
 
-  <!-- Header with Logo -->
+  <!-- Header -->
   <header>
     <img src="images/logo.png" alt="RabtaMall Logo" class="logo" />
-    <h1>RabtaMall</h1>
+    <h1 class="site-title">RabtaMall</h1>
   </header>
 
-  <!-- Products Section -->
+  <!-- Product Section -->
   <section class="products" id="products-container">
-    <!-- Products will be inserted here dynamically -->
+    <!-- Product boxes appear here -->
   </section>
 
+  <!-- Script -->
   <script>
-    const whatsappNumber = "923141682122"; // بین الاقوامی فارمیٹ میں (92 کے ساتھ)
+    const whatsappNumber = "923141682122"; // آپ کا نمبر
 
     const products = [
-      {
-        title: "Stylish Shirt",
-        image: "images/shirt1.jpg"
-      },
-      {
-        title: "Elegant Watch",
-        image: "images/watch1.jpg"
-      },
-      {
-        title: "Casual Shoes",
-        image: "images/shoes1.jpg"
-      },
-      {
-        title: "Trendy Sunglasses",
-        image: "images/sunglasses1.jpg"
-      },
-      {
-        title: "Leather Wallet",
-        image: "images/wallet1.jpg"
-      }
+      { title: "Stylish Shirt", image: "images/shirt1.jpg" },
+      { title: "Elegant Watch", image: "images/watch1.jpg" },
+      { title: "Casual Shoes", image: "images/shoes1.jpg" },
+      { title: "Sunglasses", image: "images/sunglasses1.jpg" },
+      { title: "Leather Wallet", image: "images/wallet1.jpg" }
     ];
 
-    function renderProducts() {
-      const container = document.getElementById("products-container");
-      container.innerHTML = "";
+    const container = document.getElementById("products-container");
 
-      products.forEach(product => {
-        const productBox = document.createElement("div");
-        productBox.classList.add("product-box");
+    products.forEach(product => {
+      const box = document.createElement("div");
+      box.className = "product-box";
 
-        const img = document.createElement("img");
-        img.src = product.image;
-        img.alt = product.title;
+      const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product.title;
 
-        const title = document.createElement("h2");
-        title.textContent = product.title;
+      const title = document.createElement("h2");
+      title.textContent = product.title;
 
-        // WhatsApp button
-        const whatsappBtn = document.createElement("a");
-        whatsappBtn.href = `https://wa.me/${whatsappNumber}?text=Hello, I'm interested in the product: ${product.title}`;
-        whatsappBtn.target = "_blank";
-        whatsappBtn.rel = "noopener";
-        whatsappBtn.classList.add("whatsapp-button");
-        whatsappBtn.innerHTML = `🟢 Contact on WhatsApp`;
+      const btn = document.createElement("a");
+      btn.href = `https://wa.me/${whatsappNumber}?text=I'm interested in ${product.title}`;
+      btn.className = "whatsapp-button";
+      btn.target = "_blank";
+      btn.textContent = "🟢 Contact on WhatsApp";
 
-        productBox.appendChild(img);
-        productBox.appendChild(title);
-        productBox.appendChild(whatsappBtn);
-
-        container.appendChild(productBox);
-      });
-    }
-
-    renderProducts();
+      box.appendChild(img);
+      box.appendChild(title);
+      box.appendChild(btn);
+      container.appendChild(box);
+    });
   </script>
 
 </body>
