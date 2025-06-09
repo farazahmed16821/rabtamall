@@ -83,7 +83,7 @@ footer {
 /* Header and Logo Style */
 .header {
   display: flex;
-  justify-content: flex-start; /* یا flex-end اگر دائیں کارنر میں چاہتے ہیں */
+  justify-content: flex-end; /* یا flex-end اگر دائیں کارنر میں چاہتے ہیں */
   align-items: center;
   padding: 10px;
 }
