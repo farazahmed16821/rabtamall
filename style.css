@@ -1,163 +1,30 @@
-/* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background-image: url('images/pit.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: Arial, sans-serif;
-  padding: 10px;
-}
-body {
-  font-family: Arial, sans-serif;
-  background: #f8f8f8;
-  padding: 10px;
-}
+/* General Reset */
 
-/* Header styling */
-header {
-  display: flex;
-  align-items: center;
-  padding: 10px 15px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
-}
+{ margin: 0; padding: 0; box-sizing: border-box; }
 
-.logo {
-  width: 50px;
-  height: auto;
-  margin-right: 12px;
-}
 
-.site-title {
-  color: black;
-  font-size: 24px;
-  font-weight: 700;
-}
+body { font-family: Arial, sans-serif; background-image: url('images/background.jpg'); background-size: cover; background-position: center; }
 
-/* Products grid */
-.products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);  /* تین کالم */
-  gap: 15px;
-}
+/* Header Styling */ .header { display: flex; align-items: center; padding: 10px; background-color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
 
-/* Individual product box */
-.product-box {
-  background-color: white;
-  padding: 12px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.2s ease;
-}
+.logo { height: 50px; margin-right: 10px; }
 
-.product-box:hover {
-  transform: translateY(-5px);
-}
+.title { font-size: 24px; color: black; }
 
-.product-box img {
-  width: 100%;
-  border-radius: 8px;
-  height: 130px;
-  object-fit: cover;
-}
+/* Product Grid Styling */ .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; padding: 20px; }
 
-.product-box h3 {
-  margin: 10px 0 8px;
-  font-size: 16px;
-  color: #222;
-}
+.product-box { background-color: #f9f9f9; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
 
-.whatsapp-button {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
-}
+.product-box img { width: 100%; height: auto; border-radius: 8px; }
 
-.whatsapp-button:hover {
-  background-color: #1ebe57;
-}
+.product-title { font-size: 16px; margin-top: 10px; color: #333; }
 
-/* Responsive for mobile */
-@media screen and (max-width: 768px) {
-  .products {
-    grid-template-columns: repeat(3, 1fr); /* موبائل پر بھی تین کالم */
-    gap: 10px;
-  }
+.whatsapp-btn { display: inline-block; margin-top: 10px; padding: 6px 12px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
 
-  .product-box img {
-    height: 110px;
-  }
-}
+/* Footer Styling */ .footer { background-color: #000; color: #fff; text-align: center; padding: 20px 10px; }
 
-@media screen and (max-width: 480px) {
-  .products {
-    grid-template-columns: repeat(2, 1fr); /* چھوٹے موبائل پر دو کالم */
-  }
+.footer-line { margin: 10px 0; font-size: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; }
 
-  .site-title {
-    font-size: 20px;
-  }
+.footer-line .icon { font-size: 18px; }
 
-  .logo {
-    width: 40px;
-  }
-}
-.footer {
-  background: linear-gradient(to right, #000000, #1a1a1a);
-  padding: 15px 10px;
-  text-align: center;
-  border-top: 2px solid #333;
-  font-family: 'Segoe UI', sans-serif;
-  color: #fff;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-}
-
-.footer-row p {
-  margin: 5px 0;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  white-space: nowrap;
-  color: #f1f1f1;
-}
-
-.footer .owner { color: #4ecdc4; }
-.footer .location { color: #ff6b6b; }
-.footer .phone { color: #1dd1a1; }
-.footer .email { color: #54a0ff; }
-
-/* Mobile screen adjustment */
-@media (max-width: 600px) {
-  .footer-row {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .footer-row p {
-    font-size: 14px;
-  }
-}
+/* Responsive Image Fix */ img { max-width: 100%; height: auto; }
