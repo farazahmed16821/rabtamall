@@ -18,19 +18,15 @@ header .logo {
   margin-right: 15px;
 }
 
-header h1 {
-  color: white;
-  font-size: 28px;
-  margin: 0;
+.header {
+  display: flex;
+  justify-content: flex-start; /* left side. Use 'flex-end' for right side */
+  align-items: center;
+  padding: 10px;
 }
 
-/* Products Section */
-.products {
-  display: flex;
-  flex-start: start;
-  justify-content: center;
-  padding: 10px;
-  gap: 20px;
+.logo {
+  max-width: 150px;
 }
 
 .product-box {
