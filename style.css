@@ -54,3 +54,18 @@ header {
   font-size: 18px;
   color: #333;
 }
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c4a;
+}
