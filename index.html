@@ -1,277 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <header>
-  <img src="images/logo.png" alt="RabtaMall Logo" class="logo" />
-  <h1 class="site-title">RabtaMall</h1>
-</header>
-
-<section class="products">
-  <div class="product-box">
-    <img src="images/pit.jeg" alt="Dress" />
-    <h3>Women's Unstitched Silk Plain Fancy Dress</h3>
-                  <h3>Rs;2500</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product2.jpg" alt="Product 2" />
-    <h3>Product Two</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product3.jpg" alt="Product 3" />
-    <h3>Product Three</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <!-- آپ مزید باکسز یہاں شامل کر سکتے ہیں -->
-</section>
+<!-- index.html --><!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RabtaMall</title>
   <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- Header -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head><body>
   <header>
-    <img src="images/logo.png" alt="RabtaMall Logo" class="logo" />
-    <h1 class="site-title">RabtaMall</h1>
-  </header>
+    <img src="images/logo.png" alt="RabtaMall Logo">
+    <h1>RabtaMall</h1>
+  </header>  <div class="container">
+    <!-- Product Boxes -->
+    <div class="product-box">
+      <img src="images/pit.jpg" alt="Product 1">
+      <h3>Product Name 1</h3>
+      <a href="https://wa.me/03141682122" class="whatsapp-button"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div><!-- Duplicate this block for more products -->
+<div class="product-box">
+  <img src="images/pit.jpg" alt="Product 2">
+  <h3>Product Name 2</h3>
+  <a href="https://wa.me/03141682122" class="whatsapp-button"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+</div>
 
-  <!-- Product Section -->
-  <section class="products" id="products-container">
-    <!-- Product boxes appear here -->
-  </section>
+<!-- Repeat for total 30–40 boxes as needed -->
+<!-- Example box -->
+<div class="product-box">
+  <img src="images/pit.jpg" alt="Product 3">
+  <h3>Product Name 3</h3>
+  <a href="https://wa.me/03141682122" class="whatsapp-button"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+</div>
 
-  <!-- Script -->
-  <script>
-    const whatsappNumber = "923141682122"; // آپ کا نمبر
-    const container = document.getElementById("products-container");
-
-    products.forEach(product => {
-      const box = document.createElement("div");
-      box.className = "product-box";
-
-      const img = document.createElement("img");
-      img.src = product.image;
-      img.alt = product.title;
-
-      const title = document.createElement("h2");
-      title.textContent = product.title;
-
-      const btn = document.createElement("a");
-      btn.href = `https://wa.me/${whatsappNumber}?text=I'm interested in ${product.title}`;
-      btn.className = "whatsapp-button";
-      btn.target = "_blank";
-      btn.textContent = "🟢 Contact on WhatsApp";
-
-      box.appendChild(img);
-      box.appendChild(title);
-      box.appendChild(btn);
-      container.appendChild(box);
-    });
-  </script>
-
-</body>
-</html>
-<section class="products">
-
-  <!-- پہلے سے موجود پروڈکٹ باکسز -->
-
-  <!-- نیا Watch 1 -->
-  <div class="product-box">
-    <img src="images/watch2.jpg" alt="Classic Watch" />
-    <h2>Classic Watch</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Classic Watch" target="_blank" class="whatsapp-button">🟢 Contact on WhatsApp</a>
+  </div>  <div class="footer">
+    <div><i class="fas fa-user"></i> Store Owner: Faraz Ahmed</div>
+    <div><i class="fas fa-map-marker-alt"></i> Gujranwala, Peoples Colony</div>
+    <div><i class="fas fa-phone"></i> 03141682122</div>
+    <div><i class="fas fa-envelope"></i> arazahmed16821@gmail.com</div>
   </div>
-
-  <!-- نیا Watch 2 -->
-  <div class="product-box">
-    <img src="images/watch3.jpg" alt="Sporty Watch" />
-    <h2>Sporty Watch</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Sporty Watch" target="_blank" class="whatsapp-button">🟢 Contact on WhatsApp</a>
-  </div>
-
-</section>
-<section class="products">
-
-  <!-- Product 1 -->
-  <div class="product-box">
-    <img src="images/product1.jpg" alt="Stylish Shirt" />
-    <h2>Stylish Shirt</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Stylish Shirt" target="_blank" class="whatsapp-button">📱 WhatsApp</a>
-  </div>
-
-  <!-- Product 2 -->
-  <div class="product-box">
-    <img src="images/product2.jpg" alt="Fancy Abaya" />
-    <h2>Fancy Abaya</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Fancy Abaya" target="_blank" class="whatsapp-button">📱 WhatsApp</a>
-  </div>
-
-  <!-- Product 3 -->
-  <div class="product-box">
-    <img src="images/product3.jpg" alt="Casual Watch" />
-    <h2>Casual Watch</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Casual Watch" target="_blank" class="whatsapp-button">📱 WhatsApp</a>
-  </div>
-
-  <!-- Product 4 -->
-  <div class="product-box">
-    <img src="images/product4.jpg" alt="Ladies Bag" />
-    <h2>Ladies Bag</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Ladies Bag" target="_blank" class="whatsapp-button">📱 WhatsApp</a>
-  </div>
-
-  <!-- Product 5 -->
-  <div class="product-box">
-    <img src="images/product5.jpg" alt="Shoes" />
-    <h2>Shoes</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Shoes" target="_blank" class="whatsapp-button">📱 WhatsApp</a>
-  </div>
-
-  <!-- Product 6 -->
-  <div class="product-box">
-    <img src="images/product6.jpg" alt="Makeup Kit" />
-    <h2>Makeup Kit</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Makeup Kit" target="_blank" class="whatsapp-button">📱 WhatsApp</a>
-  </div>
-
-  <!-- Product 7 -->
-  <div class="product-box">
-    <img src="images/product7.jpg" alt="Necklace Set" />
-    <h2>Necklace Set</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Necklace Set" target="_blank" class="whatsapp-button">📱 WhatsApp</a>
-  </div>
-
-  <!-- Product 8 -->
-  <div class="product-box">
-    <img src="images/product8.jpg" alt="Winter Shawl" />
-    <h2>Winter Shawl</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Winter Shawl" target="_blank" class="whatsapp-button">📱 WhatsApp</a>
-  </div>
-
-  <!-- Product 9 -->
-  <div class="product-box">
-    <img src="images/product9.jpg" alt="Perfume" />
-    <h2>Perfume</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Perfume" target="_blank" class="whatsapp-button">📱 WhatsApp</a>
-  </div>
-
-  <!-- Product 10 -->
-  <div class="product-box">
-    <img src="images/product10.jpg" alt="Gift Box" />
-    <h2>Gift Box</h2>
-    <a href="https://wa.me/923141682122?text=I'm interested in Gift Box" target="_blank" class="whatsapp-button">📱 WhatsApp</a>
-  </div>
-
-</section>
-<section class="products">
-  <div class="product-box">
-    <img src="images/product1.jpg" alt="Product 1" />
-    <h3>Product One</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product2.jpg" alt="Product 2" />
-    <h3>Product Two</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product3.jpg" alt="Product 3" />
-    <h3>Product Three</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product4.jpg" alt="Product 4" />
-    <h3>Product Four</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product5.jpg" alt="Product 5" />
-    <h3>Product Five</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product6.jpg" alt="Product 6" />
-    <h3>Product Six</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product7.jpg" alt="Product 7" />
-    <h3>Product Seven</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product8.jpg" alt="Product 8" />
-    <h3>Product Eight</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product9.jpg" alt="Product 9" />
-    <h3>Product Nine</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product10.jpg" alt="Product 10" />
-    <h3>Product Ten</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product11.jpg" alt="Product 11" />
-    <h3>Product Eleven</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product12.jpg" alt="Product 12" />
-    <h3>Product Twelve</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product13.jpg" alt="Product 13" />
-    <h3>Product Thirteen</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product14.jpg" alt="Product 14" />
-    <h3>Product Fourteen</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product15.jpg" alt="Product 15" />
-    <h3>Product Fifteen</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product16.jpg" alt="Product 16" />
-    <h3>Product Sixteen</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product17.jpg" alt="Product 17" />
-    <h3>Product Seventeen</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product18.jpg" alt="Product 18" />
-    <h3>Product Eighteen</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product19.jpg" alt="Product 19" />
-    <h3>Product Nineteen</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
-  <div class="product-box">
-    <img src="images/product20.jpg" alt="Product 20" />
-    <h3>Product Twenty</h3>
-    <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-button">WhatsApp Us</a>
-  </div>
- <footer class="footer">
-  <div class="footer-row">
-    <p><span class="icon owner">👤</span> Faraz Ahmed</p>
-    <p><span class="icon location">📍</span> Gujranwala, Peoples Colony</p>
-    <p><span class="icon phone">📞</span> 0314-1682122</p>
-    <p><span class="icon email">✉️</span> farazahmed16821@gmail.com</p>
-  </div>
-</footer>
+</body></html>
