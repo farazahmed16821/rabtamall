@@ -122,3 +122,27 @@ header {
 .buy-button:hover {
   background-color: #019875;
 }
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin: 15px;
+  padding: 20px;
+  width: 270px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
