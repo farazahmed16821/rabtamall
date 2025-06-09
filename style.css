@@ -1,31 +1,29 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  font-family: sans-serif;
   background-color: #f9f9f9;
 }
 
 header {
   background-color: #ff6600;
-  padding: 20px;
-  text-align: center;
-  color: black;
+  padding: 20px 0;
   position: relative;
-}
-
-header h1 {
-  font-size: 36px;
-  margin-top: 10px;
-  color: black; /* RabtaMall title color changed to black */
+  text-align: center;
 }
 
 .logo {
-  width: 50px;          /* smaller logo size */
-  height: auto;
   position: absolute;
-  left: 20px;           /* left corner */
+  left: 20px;
   top: 15px;
+  width: 50px;
+  height: auto;
+}
+
+.site-title {
+  color: black;
+  font-size: 36px;
 }
 
 .products {
@@ -37,13 +35,13 @@ header h1 {
 }
 
 .product-box {
-  background-color: white;
   width: 220px;
+  background: white;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.15);
   padding: 15px;
   text-align: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .product-box:hover {
@@ -53,27 +51,26 @@ header h1 {
 
 .product-box img {
   width: 100%;
-  border-radius: 8px;
   height: 180px;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .product-box h2 {
-  margin-top: 12px;
   font-size: 18px;
+  margin: 12px 0;
   color: #333;
 }
 
 .whatsapp-button {
   display: inline-block;
-  margin-top: 10px;
   background-color: #25D366;
   color: white;
   padding: 8px 12px;
   border-radius: 6px;
-  font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .whatsapp-button:hover {
