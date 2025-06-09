@@ -17,8 +17,8 @@ header {
   position: absolute;
   left: 20px;
   top: 15px;
-  width: 150px;
-  height: auto;
+  width: 150px !important;
+  height: auto !important;
 }
 
 .site-title {
