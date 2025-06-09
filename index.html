@@ -8,8 +8,9 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header with Logo -->
   <header>
+    <img src="images/logo.png" alt="RabtaMall Logo" class="logo" />
     <h1>RabtaMall</h1>
   </header>
 
@@ -19,7 +20,7 @@
   </section>
 
   <script>
-    const whatsappNumber = "03141682122"; // آپ کا WhatsApp نمبر
+    const whatsappNumber = "923141682122"; // بین الاقوامی فارمیٹ میں (92 کے ساتھ)
 
     const products = [
       {
@@ -61,11 +62,11 @@
 
         // WhatsApp button
         const whatsappBtn = document.createElement("a");
-        whatsappBtn.href = `https://wa.me/${whatsappNumber}`;
+        whatsappBtn.href = `https://wa.me/${whatsappNumber}?text=Hello, I'm interested in the product: ${product.title}`;
         whatsappBtn.target = "_blank";
         whatsappBtn.rel = "noopener";
         whatsappBtn.classList.add("whatsapp-button");
-        whatsappBtn.textContent = "Contact on WhatsApp";
+        whatsappBtn.innerHTML = `🟢 Contact on WhatsApp`;
 
         productBox.appendChild(img);
         productBox.appendChild(title);
