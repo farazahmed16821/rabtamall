@@ -1,35 +1,82 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>رابطہ مال</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RabtaMall</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <img src="images/logo.png" alt="لوگو" class="logo" />
-    <h1>رابطہ مال میں خوش آمدید</h1>
+    <h1>RabtaMall</h1>
   </header>
 
-  <main class="product-grid">
-    <!-- پروڈکٹ 1 -->
-    <div class="product-box">
-      <a class="product-whatsapp-button" href="https://wa.me/923141682122" target="_blank">واٹس ایپ</a>
-      <img src="images/product1.jpg" alt="پروڈکٹ 1" />
-      <p>پروڈکٹ 1 کی تفصیل</p>
-    </div>
+  <!-- Products Section -->
+  <section class="products" id="products-container">
+    <!-- Products will be inserted here dynamically -->
+  </section>
 
-    <!-- پروڈکٹ 2 -->
-    <div class="product-box">
-      <a class="product-whatsapp-button" href="https://wa.me/923141682122" target="_blank">واٹس ایپ</a>
-      <img src="images/product2.jpg" alt="پروڈکٹ 2" />
-      <p>پروڈکٹ 2 کی تفصیل</p>
-    </div>
+  <script>
+    const whatsappNumber = "03141682122"; // آپ کا WhatsApp نمبر
 
-    <!-- یہاں باقی پروڈکٹس کو کاپی پیسٹ کریں -->
-  </main>
+    const products = [
+      {
+        title: "Stylish Shirt",
+        image: "images/shirt1.jpg"
+      },
+      {
+        title: "Elegant Watch",
+        image: "images/watch1.jpg"
+      },
+      {
+        title: "Casual Shoes",
+        image: "images/shoes1.jpg"
+      },
+      {
+        title: "Trendy Sunglasses",
+        image: "images/sunglasses1.jpg"
+      },
+      {
+        title: "Leather Wallet",
+        image: "images/wallet1.jpg"
+      }
+    ];
 
-  <script src="script.js"></script>
+    function renderProducts() {
+      const container = document.getElementById("products-container");
+      container.innerHTML = "";
+
+      products.forEach(product => {
+        const productBox = document.createElement("div");
+        productBox.classList.add("product-box");
+
+        const img = document.createElement("img");
+        img.src = product.image;
+        img.alt = product.title;
+
+        const title = document.createElement("h2");
+        title.textContent = product.title;
+
+        // WhatsApp button
+        const whatsappBtn = document.createElement("a");
+        whatsappBtn.href = `https://wa.me/${whatsappNumber}`;
+        whatsappBtn.target = "_blank";
+        whatsappBtn.rel = "noopener";
+        whatsappBtn.classList.add("whatsapp-button");
+        whatsappBtn.textContent = "Contact on WhatsApp";
+
+        productBox.appendChild(img);
+        productBox.appendChild(title);
+        productBox.appendChild(whatsappBtn);
+
+        container.appendChild(productBox);
+      });
+    }
+
+    renderProducts();
+  </script>
+
 </body>
 </html>
