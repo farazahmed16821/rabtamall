@@ -1,83 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  background-color: #f9f9f9;
-}
-
-header {
-  background-color: #ff6600;
-  padding: 20px 0;
-  position: relative;
-  text-align: center;
-}
-
-.logo {
-  position: absolute;
-  left: 20px;
-  top: 15px;
-  width: 150px;
-  max-width: 150px;
-  height: auto;
-}
-
-.site-title {
-  color: black;
-  font-size: 36px;
-}
-
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  padding: 20px;
-}
-
-.product-box {
-  width: 220px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.product-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.product-box img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.product-box h2 {
-  font-size: 18px;
-  margin: 12px 0;
-  color: #333;
-}
-
-.whatsapp-button {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.whatsapp-button:hover {
-  background-color: #128c4a;
-}
-/* Basic reset and styles (جیسے پہلے دیے تھے) */
+/* Basic reset */
 * {
   margin: 0;
   padding: 0;
@@ -86,65 +7,76 @@ header {
 
 body {
   font-family: Arial, sans-serif;
-  background: #f2f2f2;
+  background: #f8f8f8;
+  padding: 10px;
 }
 
+/* Header styling */
 header {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 15px;
   background: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
 .logo {
-  width: 60px;
+  width: 50px;
   height: auto;
-  margin-right: 15px;
+  margin-right: 12px;
 }
 
 .site-title {
   color: black;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 700;
 }
 
+/* Products grid */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);  /* تین کالم */
+  gap: 15px;
 }
 
+/* Individual product box */
 .product-box {
   background-color: white;
+  padding: 12px;
   border-radius: 10px;
-  overflow: hidden;
-  padding: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
   text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-box:hover {
+  transform: translateY(-5px);
 }
 
 .product-box img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
   border-radius: 8px;
+  height: 130px;
+  object-fit: cover;
 }
 
 .product-box h3 {
-  margin: 12px 0;
-  font-size: 18px;
-  color: #333;
+  margin: 10px 0 8px;
+  font-size: 16px;
+  color: #222;
 }
 
 .whatsapp-button {
   display: inline-block;
   background-color: #25D366;
   color: white;
-  padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
   font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
   transition: background-color 0.3s ease;
 }
 
@@ -152,33 +84,28 @@ header {
   background-color: #1ebe57;
 }
 
-/* --- موبائل کے لیے اضافی CSS --- */
-@media screen and (max-width: 600px) {
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr); /* موبائل پر بھی تین کالم */
+    gap: 10px;
+  }
+
+  .product-box img {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr); /* چھوٹے موبائل پر دو کالم */
+  }
+
   .site-title {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .logo {
-    width: 45px;
-    margin-right: 10px;
-  }
-
-  .products {
-    grid-template-columns: 1fr; /* ایک کالم موبائل پر */
-    padding: 10px;
-    gap: 15px;
-  }
-
-  .product-box {
-    padding: 12px;
-  }
-
-  .product-box h3 {
-    font-size: 16px;
-  }
-
-  .whatsapp-button {
-    padding: 12px 20px;
-    font-size: 16px;
+    width: 40px;
   }
 }
