@@ -10,21 +10,22 @@ header {
   background-color: #ff6600;
   padding: 20px;
   text-align: center;
-  color: white;
+  color: black;
   position: relative;
 }
 
 header h1 {
   font-size: 36px;
   margin-top: 10px;
+  color: black; /* RabtaMall title color changed to black */
 }
 
 .logo {
-  width: 80px;
+  width: 50px;          /* smaller logo size */
   height: auto;
   position: absolute;
-  left: 20px;
-  top: 10px;
+  left: 20px;           /* left corner */
+  top: 15px;
 }
 
 .products {
