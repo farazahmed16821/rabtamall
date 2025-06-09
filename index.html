@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>رابطہ مال - آن لائن سٹور</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>رابطہ مال</h1>
+        <nav>
+            <a href="#products">مصنوعات</a>
+            <a href="#cart">کارٹ</a>
+        </nav>
+    </header>
 
+    <main>
+        <section id="products" class="products">
+            <h2>ہماری مصنوعات</h2>
+            <div class="product-list">
+
+                <!-- پروڈکٹ 1 -->
+                <div class="product-card">
+                    <img src="images/shirt1.jpg" alt="کپڑے کا لباس" />
+                    <h3>خوبصورت قمیض</h3>
+                    <p>قیمت: 1200 روپے</p>
+                    <button onclick="addToCart('خوبصورت قمیض', 1200)">کارٹ میں ڈالیں</button>
+                    <a href="https://wa.me/923141682122?text=السلام علیکم،%20میں%20%22خوبصورت قمیض%22%20خریدنا%20چاہتا%20ہوں۔" target="_blank" class="whatsapp-btn">واٹس ایپ پر آرڈر کریں</a>
+                </div>
+
+                <!-- پروڈکٹ 2 -->
+                <div class="product-card">
+                    <img src="images/watch1.jpg" alt="گھڑی" />
+                    <h3>سجیلا گھڑی</h3>
+                    <p>قیمت: 2500 روپے</p>
+                    <button onclick="addToCart('سجیلا گھڑی', 2500)">کارٹ میں ڈالیں</button>
+                    <a href="https://wa.me/923141682122?text=السلام علیکم،%20میں%20%22سجیلا گھڑی%22%20خریدنا%20چاہتا%20ہوں۔" target="_blank" class="whatsapp-btn">واٹس ایپ پر آرڈر کریں</a>
+                </div>
+
+                <!-- پروڈکٹ 3 -->
+                <div class="product-card">
+                    <img src="images/scarf1.jpg" alt="اسکارف" />
+                    <h3>خوبصورت اسکارف</h3>
+                    <p>قیمت: 800 روپے</p>
+                    <button onclick="addToCart('خوبصورت اسکارف', 800)">کارٹ میں ڈالیں</button>
+                    <a href="https://wa.me/923141682122?text=السلام علیکم،%20میں%20%22خوبصورت اسکارف%22%20خریدنا%20چاہتا%20ہوں۔" target="_blank" class="whatsapp-btn">واٹس ایپ پر آرڈر کریں</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="cart" class="cart">
+            <h2>آپ کا کارٹ</h2>
+            <div id="cart-items"></div>
+            <p id="total-price"></p>
+            <button onclick="checkout()">چیک آؤٹ</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 رابطہ مال۔ تمام حقوق محفوظ ہیں۔</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
