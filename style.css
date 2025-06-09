@@ -80,3 +80,14 @@ footer {
   padding: 10px;
   margin-top: 40px;
 }
+/* Header and Logo Style */
+.header {
+  display: flex;
+  justify-content: flex-start; /* یا flex-end اگر دائیں کارنر میں چاہتے ہیں */
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  max-width: 150px;
+}
