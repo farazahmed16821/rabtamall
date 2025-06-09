@@ -4,7 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-image: url('images/pit.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
 body {
   font-family: Arial, sans-serif;
   background: #f8f8f8;
