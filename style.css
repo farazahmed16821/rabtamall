@@ -16,7 +16,23 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+/* Header with logo */
+header {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  padding: 10px;
+}
 
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+header h1 {
+  color: white;
+  font-size: 24px;
+}
 header h1 {
     margin: 0;
     font-size: 1.8em;
