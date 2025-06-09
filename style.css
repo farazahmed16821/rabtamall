@@ -1,68 +1,25 @@
-body {
-  margin: 0;
-  font-family: 'Noto Nastaliq Urdu', serif;
-  background-color: #f7f7f7;
-}
+/* style.css */
 
-header {
-  background-color: #222;
-  color: white;
-  padding: 10px 20px;
-  text-align: right;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
+body { margin: 0; padding: 0; font-family: 'Noto Nastaliq Urdu', 'Arial', sans-serif; background-color: #f4f4f4; direction: rtl; }
 
-.logo {
-  height: 50px;
-  margin-left: 10px;
-}
+header { background-color: #007bff; color: white; padding: 10px; text-align: center; position: relative; }
 
-h1 {
-  font-size: 24px;
-}
+.logo { position: absolute; top: 10px; left: 10px; height: 50px; }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 16px;
-  padding: 20px;
-}
+h1 { margin: 0; font-size: 28px; }
 
-.product-box {
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  text-align: center;
-  position: relative;
-}
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; padding: 20px; }
 
-.product-box img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
+.product-box { background-color: white; border: 1px solid #ddd; border-radius: 10px; padding: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); position: relative; }
 
-.product-box p {
-  margin-top: 8px;
-  font-weight: bold;
-}
+.product-box img { max-width: 100%; height: auto; border-radius: 5px; }
 
-.product-whatsapp-button {
-  display: block;
-  background-color: #25d366;
-  color: white;
-  padding: 6px 10px;
-  text-align: center;
-  border-radius: 8px;
-  margin-bottom: 6px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-}
+.product-box p { margin-top: 10px; font-size: 16px; }
 
-.product-whatsapp-button:hover {
-  background-color: #1ebea5;
-}
+.product-whatsapp-button { background-color: #25D366; color: white; text-decoration: none; padding: 5px 10px; border-radius: 5px; font-size: 14px; position: absolute; top: 10px; right: 10px; }
+
+@media (max-width: 600px) { .product-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+
+.logo { height: 40px; }
+
+h1 { font-size: 20px; } }
