@@ -11,7 +11,7 @@ body { font-family: Arial, sans-serif; background-image: url('images/background.
 
 .title { font-size: 24px; color: black; }
 
-/* Product Grid Styling */ .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; padding: 20px; }
+/* Product Grid Styling */ .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 20px; }
 
 .product-box { background-color: #f9f9f9; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
 
@@ -28,3 +28,5 @@ body { font-family: Arial, sans-serif; background-image: url('images/background.
 .footer-line .icon { font-size: 18px; }
 
 /* Responsive Image Fix */ img { max-width: 100%; height: auto; }
+
+@media (max-width: 768px) { .product-grid { grid-template-columns: repeat(3, 1fr); } }
