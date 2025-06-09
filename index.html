@@ -2,46 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RabtaMall</title>
   <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
-
-  <!-- Logo and Title -->
   <header>
-    <img src="images/logo.png" alt="Logo" class="logo" />
-    <h1 class="site-title">RabtaMall</h1>
+    <img src="logo.png" alt="RabtaMall Logo" class="logo" />
+    <h1>RabtaMall</h1>
   </header>
 
-  <!-- Product Boxes -->
-  <section class="products">
-    <!-- Repeat this box as needed -->
-    <div class="product-box">
-      <img src="images/pit.jpg" alt="Product Image" />
-      <h3>Watch 1</h3>
-      <a class="whatsapp-btn" href="https://wa.me/03141682122" target="_blank">Order on WhatsApp</a>
+  <main>
+    <div class="product-container">
+      <!-- Sample 20 products -->
+      <!-- Change images and titles easily -->
+      <div class="product-box">
+        <img src="pit1.jpg" alt="Product 1" />
+        <h3>Product 1</h3>
+        <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+      <div class="product-box">
+        <img src="pit2.jpg" alt="Product 2" />
+        <h3>Product 2</h3>
+        <a href="https://wa.me/03141682122" target="_blank" class="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+      <!-- Repeat for products 3 to 20 similarly -->
+      <!-- For brevity, add more product-box divs here with images pit3.jpg, pit4.jpg etc. -->
     </div>
-    <div class="product-box">
-      <img src="images/pit.jpg" alt="Product Image" />
-      <h3>Watch 2</h3>
-      <a class="whatsapp-btn" href="https://wa.me/03141682122" target="_blank">Order on WhatsApp</a>
-    </div>
-    <div class="product-box">
-      <img src="images/pit.jpg" alt="Product Image" />
-      <h3>Watch 3</h3>
-      <a class="whatsapp-btn" href="https://wa.me/03141682122" target="_blank">Order on WhatsApp</a>
-    </div>
-   <!-- Add more boxes below like above -->
-  </section>
+  </main>
 
-  <!-- Footer -->
   <footer>
-    <div class="footer-item">👤 Store Owner: Faraz Ahmed</div>
-    <div class="footer-item">📍 Location: Peoples Colony, Gujranwala</div>
-    <div class="footer-item">📞 03141682122</div>
-    <div class="footer-item">📧 farazahmed16821@gmail.com</div>
+    <div class="footer-item">
+      <i class="fa-solid fa-user"></i>
+      <span>Store Owner: Faraz Ahmed</span>
+    </div>
+    <div class="footer-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>Gujranwala Peoples Colony</span>
+    </div>
+    <div class="footer-item">
+      <i class="fa-solid fa-phone"></i>
+      <span>03141682122</span>
+    </div>
+    <div class="footer-item">
+      <i class="fa-solid fa-envelope"></i>
+      <span>arazahmed16821@gmail.com</span>
+    </div>
   </footer>
-
 </body>
 </html>
