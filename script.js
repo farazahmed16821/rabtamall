@@ -8,3 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+const products = [
+  { title: "Naya Product", image: "images/newimage.jpg" },
+  { title: "Doosra Product", image: "images/secondimage.jpg" }
+];
