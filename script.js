@@ -60,4 +60,4 @@ window.onload = function () {
 
 console.log("Website loaded successfully!");
 
-alert("میرے پیارے کسٹمرز خوش امدید RabtaMall پڑ");
+alert("میرے پیارے کسٹمرز خوش امدید RabtaMall پر");
